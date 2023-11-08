@@ -1,0 +1,90 @@
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid:
+    "header" auto
+    "content" 1fr
+    "footer" auto /
+    auto;
+}
+
+.content {
+  background-color: $divider-color;
+  grid-area: content;
+  padding: 20px;
+}
+
+.title {
+  &-underline {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $divider-color;
+  }
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: $box-shadow;
+    transition: box-shadow 0.3s;
+  }
+
+  &-primary {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  &-secondary {
+    border: 1px solid $primary-color;
+    background: white;
+    color: $primary-color;
+  }
+
+  &-danger {
+    background-color: $text-error;
+    color: white;
+  }
+}
+
+.text-error {
+  color: $text-error;
+}
+
+.active {
+  color: $primary-color;
+  font-weight: bold;
+}
+
+.calc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba($color: black, $alpha: 0.7);
+
+  @include flex;
+
+  .modal {
+    width: 30%;
+    background: white;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 40px;
+    box-shadow: $box-shadow;
+    text-align: center;
+
+    p {
+      font-size: 2rem;
+    }
+
+    .btn {
+      margin-top: 30px;
+      margin-right: 10px;
+    }
+  }
+}

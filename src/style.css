@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.content .sidebar {
+  flex: 0 0 250px;
+  margin-top: 100px;
+}
+.content .sidebar select {
+  width: 250px;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  margin-right: 1rem;
+}
+.content .sidebar .categories {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  margin-right: 1rem;
+}
+.content .sidebar .categories li {
+  margin: 1rem;
+}
+.content .sidebar .categories li:hover {
+  color: rgb(46, 170, 204);
+  cursor: pointer;
+}
+.content .articles-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 5rem 0 10rem;
+  flex: 1;
+}
+.content .articles-container .article {
+  background: white;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  border-radius: 1rem;
+  padding: 0 5rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content .articles-container .article img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  margin-top: -3rem;
+}
+.content .articles-container .article h2 {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.content .articles-container .article-author {
+  color: rgb(46, 170, 204);
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+.content .articles-container .article-content {
+  max-width: 550px;
+}
+.content .articles-container .article-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 3rem 0;
+  padding-top: 3rem;
+  border-top: 1px solid #ecf0f1;
+}
+.content .articles-container .article-actions .btn {
+  margin-left: 1rem;
+}/*# sourceMappingURL=style.css.map */

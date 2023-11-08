@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.content form {
+  width: 700px;
+  padding: 4rem;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.content form h2 {
+  width: 100%;
+}
+.content form .form-group {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.content form .form-group label {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.content form .form-group input, .content form .form-group textarea, .content form .form-group select {
+  width: 100%;
+  border: 1px solid #ecf0f1;
+  outline: none;
+  font-size: 1.8rem;
+  border-radius: 3px;
+}
+.content form .form-group input:focus, .content form .form-group textarea:focus, .content form .form-group select:focus {
+  border-color: rgb(46, 170, 204);
+}
+.content form .form-group input {
+  padding: 5px 10px;
+}
+.content form .form-group textarea {
+  min-height: 20rem;
+  padding: 10px;
+}
+.content form .form-group select {
+  padding: 10px 15px;
+}/*# sourceMappingURL=form.css.map */
